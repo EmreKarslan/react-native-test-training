@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { initialState } from "./counter.constants";
 
-const counterSlice = createSlice({
+export const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
