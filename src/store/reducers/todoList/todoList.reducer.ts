@@ -7,10 +7,16 @@ export const todoSlice = createSlice({
   initialState,
   reducers: {
     addTodo: (state, action: PayloadAction<Todo>) => {
-      state.todos.push(action.payload);
+      if (!state.todos.find((todo) => todo.id === action.payload.id)) {
+        state.todos.push(action.payload);
+      } else {
+        throw new Error(
+          "Cannot add todo: A todo with the same ID already exists. Please ensure each todo has a unique ID.",
+        );
+      }
     },
     removeTodo: (state, action: PayloadAction<number>) => {
-      state.todos.splice(action.payload, 1);
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
     toggleTodo: (state, action: PayloadAction<number>) => {
       state.todos[action.payload].isDone = !state.todos[action.payload].isDone;
