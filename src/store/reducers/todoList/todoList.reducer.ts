@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Todo } from "./todoList.types";
 import { initialState } from "./todoList.contants";
 
-const todoSlice = createSlice({
+export const todoSlice = createSlice({
   name: "todo",
   initialState,
   reducers: {
