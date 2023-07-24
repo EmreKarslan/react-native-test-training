@@ -5,8 +5,10 @@
   ],
   "collectCoverage": true,
   "collectCoverageFrom": [
-    "src/**/*.tsx",
     "src/**/*.ts",
+    "src/**/*.tsx",
+    "!src/**/*.constants.ts",
+    "!src/**/*.types.ts",
     "!src/utils/test/**",
     "!src/**/**.style.ts"
   ]
