@@ -1,10 +1,8 @@
 import React from "react";
 import { FlatList } from "react-native";
 import { TodoListItem } from "./todoListItem/todoListItem";
-
-import { Todo } from "../../../store/reducers/todoList/todoList.types";
 import { useSelector } from "react-redux";
-import { RootState } from "../../../store";
+import { RootState } from "@/store/index";
 
 export const TodoList: React.FC = () => {
   const todos2 = useSelector((state: RootState) => state.todo.todos);
