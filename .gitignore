@@ -38,7 +38,6 @@ android/app/build
 
 # TypeScript specific
 *.tsbuildinfo
-*.ts
 
 # Jest specific
 /coverage/

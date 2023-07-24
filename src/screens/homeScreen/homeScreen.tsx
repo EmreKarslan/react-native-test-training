@@ -10,10 +10,15 @@ const HomeScreen = () => {
     navigation.navigate("Counter");
   };
 
+  const handleNavigateToTodo = () => {
+    navigation.navigate("Todo");
+  };
+
   return (
     <View>
       <Text>Welcome to the Home Screen!</Text>
       <Button onPress={handleNavigateToCounter} title="Go to Counter Screen" />
+      <Button onPress={handleNavigateToTodo} title="Go to Todo Screen" />
     </View>
   );
 };
