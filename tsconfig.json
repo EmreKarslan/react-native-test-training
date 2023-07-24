@@ -4,17 +4,17 @@
     "strict": false,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/index.ts"],
-      "@/icons/*": ["src/icons/index.ts"],
-      "@/ui/*": ["src/ui/*"],
-      "@/util/*": ["src/util/*"],
-      "@/screens/*": ["src/screens/*"],
-      "@/navigation/*": ["src/navigation/*"],
-      "@/constants/*": ["src/constants/*"],
-      "@/assets/*": ["src/assets/*"],
+      "@/*": ["src/*"],
       "@/hooks/*": ["src/hooks/*"],
       "@/store/*": ["src/store/*"],
-      "@/types/*": ["src/types/*"]
+      "@/types/*": ["src/types/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/assets/*": ["src/assets/*"],
+      "@/screens/*": ["src/screens/*"],
+      "@/icons/*": ["src/icons/index.ts"],
+      "@/constants/*": ["src/constants/*"],
+      "@/navigation/*": ["src/navigation/*"],
+      "@/components/*": ["src/components/index.ts"]
     }
   },
   "exclude": [
