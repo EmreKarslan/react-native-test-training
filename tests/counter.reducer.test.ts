@@ -22,8 +22,14 @@ describe("counterReducer", () => {
     expect(newState.value).toEqual(-1);
   });
 
-  it("should handle incrementByAmount", () => {
+  it("should handle incrementByAmount(positive input)", () => {
     const amount = 15;
+    const newState = counterReducer(initialState, incrementByAmount(amount));
+    expect(newState.value).toEqual(amount);
+  });
+
+  it("should handle incrementByAmount(negative input)", () => {
+    const amount = -15;
     const newState = counterReducer(initialState, incrementByAmount(amount));
     expect(newState.value).toEqual(amount);
   });
